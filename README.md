@@ -1,5 +1,5 @@
 # Installation
-Install with composer by running ```composer require eklundkristoffer/assently```
+Install with composer by running `composer require fped/assently`
 
 Add ```Assently\AssentlyServiceProvider``` to your providers array. 
 
