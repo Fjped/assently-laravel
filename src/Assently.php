@@ -9,6 +9,21 @@ use Assently\AssentlyDocument;
 class Assently 
 {
     /**
+     * The Assently API key.
+     *
+     * @var string
+     */
+    protected $key;
+
+    /**
+     * The Assently API secret.
+     *
+     * @var string
+     */
+    protected $secret;
+
+    
+    /**
      * Create a new Assently instance.
      *
      * @param  string  $key

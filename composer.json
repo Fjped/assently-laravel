@@ -1,14 +1,24 @@
 {
-    "name": "eklundkristoffer/assently",
-    "description": "Assently API for Laravel",
+    "name": "fped/assently",
+    "description": "Updated laravel Assently API client",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Fredrik Pedersén",
+            "email": "fredrik@areachica.se"
+        },
         {
             "name": "Kristoffer Eklund",
             "email": "kristoffereklund1@gmail.com"
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^7.5",
+        "ramsey/uuid": "^4.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Assently\\": "src/"
+        }
     }
 }

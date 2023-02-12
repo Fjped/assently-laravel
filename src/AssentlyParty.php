@@ -2,6 +2,9 @@
 
 namespace Assently;
 
+use Storage;
+
+
 class AssentlyParty
 {
     /**
@@ -13,7 +16,7 @@ class AssentlyParty
      */
     public function create($options)
     {
-        $filesystem = app('files');
+        $filesystem = Storage::disk('local');
 
         $json = [
             'Id' => rand(1111, 9999)

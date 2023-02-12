@@ -2,6 +2,9 @@
 
 namespace Assently;
 
+use Storage;
+
+
 class AssentlyDocument
 {
     /**
@@ -14,7 +17,7 @@ class AssentlyDocument
      */
     public function create($file, $options = [])
     {
-        $filesystem = app('files');
+        $filesystem = Storage::disk('local');
 
         $json = [
             'Filename'    => $filesystem->baseName($file),

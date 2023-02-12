@@ -4,9 +4,15 @@ namespace Assently;
 
 use Exception;
 use GuzzleHttp\Client;
+use Ramsey\Uuid\Rfc4122\UuidV4;
 
 class AssentlyCase 
 {
+    
+    protected $id;
+    protected $client;
+    protected $assently;
+    protected $case;
     /**
      * Create a new AssentlyCase instance.
      *
@@ -40,7 +46,7 @@ class AssentlyCase
     public function create($data)
     {
         $default = [
-            'Id' => '5a0e0869-'.rand(1111, 9999).'-4b79-'.rand(1111, 9999).'-466ea5cca5ce'
+            'Id' => UuidV4::uuid4()->toString(),
         ];
 
         $json = array_merge($default, $data);
