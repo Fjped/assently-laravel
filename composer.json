@@ -2,6 +2,7 @@
     "name": "fped/assently",
     "description": "Updated laravel Assently API client",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Fredrik Pedersén",

@@ -19,7 +19,7 @@ class AssentlyParty
         $filesystem = Storage::disk('local');
 
         $json = [
-            'Id' => rand(1111, 9999)
+            'Id' => rand(1111, 9999),
         ];
 
         return array_merge($json, $options);
